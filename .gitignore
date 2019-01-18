@@ -1,7 +1,7 @@
 # Created by https://www.gitignore.io/api/c++,java,linux,macos,gradle,windows,visualstudiocode
 
 ### C++ ###
-# Prerequisites
+# Prerequisites inconsequential change
 *.d
 
 # Compiled Object files
