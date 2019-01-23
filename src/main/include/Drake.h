@@ -10,7 +10,9 @@
 #include <string>
 
 #include <frc/TimedRobot.h>
-#include <frc/smartdashboard/SendableChooser.h>
+#include <frc/DifferentialDrive.h>
+#include <frc/MecanumDrive.h>
+#include <rev/CANSparkMax.h>
 
 class Robot : public frc::TimedRobot {
  public:
@@ -21,10 +23,4 @@ class Robot : public frc::TimedRobot {
   void TeleopInit() override;
   void TeleopPeriodic() override;
   void TestPeriodic() override;
-
- private:
-  frc::SendableChooser<std::string> m_chooser;
-  const std::string kAutoNameDefault = "Default";
-  const std::string kAutoNameCustom = "My Auto";
-  std::string m_autoSelected;
 };
